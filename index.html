@@ -8,12 +8,49 @@
   </head>
   <body>
     <header>
-      <ol>
-        <li>Google Chrome</li>
-        <li>Visual Studio Code</li>
-        <li>Figma</li>
-        <li>GitHub</li>
-      </ol>
+      <nav>
+        <details open>
+          <summary>Setup</summary>
+          <ol>
+            <li>
+              <a href="#google-chrome"> Google Chrome </a>
+            </li>
+            <li>
+              <a href="#visual-studio-code"> Visual Studio Code </a>
+            </li>
+            <li>
+              <a href="#figma"> Figma </a>
+            </li>
+            <li>
+              <a href="#github"> GitHub </a>
+            </li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>Conceptos Esenciales del Desarollo Web</summary>
+          <ol>
+            <li>
+              <a href="#que-es-html"> Qué es HTML </a>
+            </li>
+            <li>
+              <a href="#etiquetas"> Etiquetas </a>
+            </li>
+            <li>
+              <a href="#dom-content"> DOM </a>
+            </li>
+            <li>
+              <a href="#semantica"> Semántica </a>
+            </li>
+            <li>
+              <a href="#atributos"> Atributos </a>
+            </li>
+            <li>
+              <a href="#que-es-css"> Qué es CSS </a>
+            </li>
+          </ol>
+        </details>
+      </nav>
     </header>
     <h1>Hello there, Soy Miguel Angel Gonzales</h1>
     <p>
@@ -25,6 +62,7 @@
     <h2>Setup</h2>
 
     <img
+      id="google-chrome"
       src="./images/google-chrome.png"
       alt="Logo de Google Chrome"
       title="Logo de Google Chrome"
@@ -37,6 +75,7 @@
     </p>
 
     <img
+      id="visual-studio-code"
       src="./images/visual-studio-code.png"
       alt="Logo del Editor de Visual Studio Code"
       title="Logo del Editor de Visual Studio Code"
@@ -49,7 +88,12 @@
       importar el lenguaje en el que se desemvuelva.
     </p>
 
-    <img src="./images/figma.png" alt="Logo de Figma" title="Logo de Figma" />
+    <img
+      id="figma"
+      src="./images/figma.png"
+      alt="Logo de Figma"
+      title="Logo de Figma"
+    />
     <h3>Figma</h3>
     <p>
       Figma es una la herramienta más popular en la actualidad para entregar
@@ -58,6 +102,7 @@
     </p>
 
     <img
+      id="github"
       src="./images/github.png"
       alt="Logo de GitHub"
       title="Logo de GitHub"
@@ -72,13 +117,13 @@
     </p>
     <hr />
     <h2>Conceptos Esenciales del Desarrollo Web</h2>
-    <h3>Qué es HTML</h3>
+    <h3 id="que-es-html">Qué es HTML</h3>
     <p>
       Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
       componente más básico de la web. Define el significado y la estructura del
       contenido.
     </p>
-    <h3>Etiquetas</h3>
+    <h3 id="etiquetas">Etiquetas</h3>
     <p>
       Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al
       contenido de nuestro website y cada una tiene características y usos
@@ -93,7 +138,7 @@
       Developer.
     </p>
 
-    <h3>DOM</h3>
+    <h3 id="dom-content">DOM</h3>
     <p>
       El Document Object Model es una estructura de árbol que representará todos
       nuestros proyectos web como si un árbol genealógico fuera: padres, hijos,
@@ -106,7 +151,7 @@
       alt="Estructura de arbol que representa al object document model"
       title="Estructura de arbol que representa al object document model"
     />
-    <h3>Semántica</h3>
+    <h3 id="semantica">Semántica</h3>
     <p>
       La semántica le brinda sentido a cada elemento existen en un sitio web,
       algunos elementos será meramente decorativos y no deben significar nada
@@ -118,14 +163,14 @@
       web, para que personas con habilidades diferentes puedan entender cada
       contenido.
     </p>
-    <h3>Atributos</h3>
+    <h3 id="atributos">Atributos</h3>
     <p>
       Los atributos le dan características extra a las etiquetas para
       complementar información y son pre programadas por el navegador, algunos
       atributos funcionan en todas las etiquetas de la misma forma como ‘class’
       pero otros atributos funcionan en solo alguna etiquetas como src
     </p>
-    <h3>CSS</h3>
+    <h3 id="que-es-css">CSS</h3>
     <p>
       Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el
       lenguaje de estilos utilizado para describir la presentación de documentos
@@ -178,5 +223,12 @@
       alt="Programar Cambio mi Vida"
       title="Programar Cambio mi Vida"
     />
+    <br />
+    <p>
+      Si tienes alguna pregunta escríbeme a
+      <a href="mailto:miguelgonzales.contacto@outlook.com"
+        >miguelgonzales.contacto@outlook.com</a
+      >
+    </p>
   </body>
 </html>
