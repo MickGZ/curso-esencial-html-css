@@ -46,6 +46,7 @@ a {
 header {
   font-size: 14px;
   color: var(--gray10);
+  /* background-color: pink; */
 }
 
 header a {
@@ -90,6 +91,29 @@ pre {
   line-height: 24px;
   font-family: "Roboto";
 }
+
+.main {
+  /* background: url("../images/pattern.png"); */
+}
+
+.wrapper {
+  background-color: white;
+  width: 902px;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+.main-content {
+  padding: 20px;
+}
+
+/* .debug {
+  box-shadow: inset 0 0 0 1px red;
+  outline: 1px solid red;
+  background: red;
+  border: 1px solid red !important;
+  box-sizing: border-box;
+} */
 
 blockquote {
   margin: 32px 0;
