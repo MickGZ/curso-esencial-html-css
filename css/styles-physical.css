@@ -33,6 +33,10 @@
   --gray10: #616161;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--gray30);
   font-family: "Roboto", sans-serif;
@@ -43,10 +47,31 @@ a {
   color: var(--gray30);
 }
 
+.header {
+  /* border: 1px solid red; */
+  position: sticky;
+  top: 0;
+}
+
+header li {
+  margin-bottom: 16px;
+}
+
 header {
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  position: absolute;
+  left: -232px;
+  top: 64px;
   /* background-color: pink; */
+  /* border: 1px solid red; */
+  /* z-index: 1; */
+  /* top: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* top: 200px; */
+  /* bottom: 100px; */
 }
 
 header a {
@@ -60,12 +85,14 @@ header a:hover {
 
 nav details summary {
   font-weight: bold;
+  line-height: 24px;
 }
 
 h1 {
   font-size: 60px;
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
 }
 
 /* h1 ~ p {
@@ -83,6 +110,9 @@ h3 {
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 pre {
@@ -90,6 +120,10 @@ pre {
   padding: 40px;
   line-height: 24px;
   font-family: "Roboto";
+}
+
+.header-content {
+  position: relative;
 }
 
 .main {
@@ -104,7 +138,8 @@ pre {
 }
 
 .main-content {
-  padding: 20px;
+  /* padding: 20px; */
+  background-color: white;
 }
 
 /* .debug {
@@ -148,6 +183,7 @@ blockquote span::before {
 
 .section-content {
   margin-top: 164px;
+  position: relative;
 }
 
 .section-content:first-of-type {
@@ -177,7 +213,7 @@ blockquote span::before {
 .section-content h3 {
   counter-increment: titleList;
   /* background-color: red; */
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -186,8 +222,11 @@ blockquote span::before {
 
 .section-content h3::after {
   content: "";
-  width: 32px;
+  width: 80px;
   height: 4px;
   background: var(--gray30);
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
