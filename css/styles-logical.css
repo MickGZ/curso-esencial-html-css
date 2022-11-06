@@ -37,6 +37,10 @@ body {
   color: var(--white30);
   font-family: "Nunito", sans-serif;
   background-color: #251f24;
+  margin: 0;
+  /* margin-inline: 100px; */
+  /* margin-block: 100px; */
+  /* margin-block-start: 100px; */
 }
 
 a {
@@ -73,19 +77,32 @@ h3 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 60px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
 }
 
 h2 {
   font-size: 2em;
+  margin-block: 40px;
 }
 
 h3 {
   font-size: 1.5em;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
 }
 
 pre {
   background: var(--white10);
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
 }
 
 p {
@@ -106,6 +123,12 @@ p {
   height: 350px;
 }
 
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
 .section-content {
   counter-reset: titleList;
 }
@@ -115,13 +138,39 @@ p {
 }
 
 .section-content h3::before {
-  content: counter(titleList);
+  content: counter(titleList, decimal) ". ";
 }
 
-.section-content h3::after {
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  border-radius: 8px;
+  line-height: 32px;
+  font-size: 24px;
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+}
+
+/* .section-content h3::after {
   content: "";
   width: 32px;
   height: 4px;
   background: var(--white30);
   display: inline-block;
+} */
+
+.main hr {
+  display: none;
+}
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+}
+
+.main-content {
+  padding-inline: 16px;
 }
