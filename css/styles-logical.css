@@ -99,10 +99,12 @@ hr {
 }
 
 pre {
-  background: var(--white10);
+  /* background: var(--white10); */
   padding: 40px;
   overflow: auto;
   border-radius: 8px;
+  border: 10px solid #5551ff;
+  box-shadow: -10px 10px 0 0 #abaaf6;
 }
 
 p {
